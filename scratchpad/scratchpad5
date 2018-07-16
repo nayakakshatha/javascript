@@ -1,0 +1,28 @@
+function isPrime(num){
+  flag=true;
+  if(num < 2){
+    flag = false;
+  }
+for(i = 2; i <= Math.sqrt(num); i++){
+  if(num % i ==0){
+    flag = false;
+    break;
+  }
+}
+ return flag;
+}
+function generatePrime(num){
+  count=0;
+  for(var i = 1;  ; i++){
+    if(isPrime(i)){
+      count++;
+      console.log(i);
+    }
+  if(count == num){
+    break;
+  }
+}
+}
+
+generatePrime(43)
+

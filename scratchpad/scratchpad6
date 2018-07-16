@@ -1,0 +1,13 @@
+function naturalNumber(num){
+  
+  for( var i = 1; i <= num ; i++){
+    if(i % 5 == 0){
+      continue;
+    }
+    console.log(i);
+  }
+  
+ }
+
+naturalNumber(35);
+ 
