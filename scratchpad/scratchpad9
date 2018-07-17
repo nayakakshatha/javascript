@@ -1,0 +1,17 @@
+function searchElement(arr, ele){
+  for(var i = 0;i < arr.length;i++){
+    if(arr[i] == ele){
+      return true;
+    }
+  }
+  return false;
+}
+function searchElements(arr,e1,e2,e3){
+  if(searchElement(arr,e1) && searchElement(arr,e2) && searchElement(arr,e3)){
+    return true;
+  }
+  return false;
+}
+var arr = [ 31,32,54,65,245,45];
+console.log(searchElement(arr,32));
+console.log(searchElement(arr,62,74,2));
